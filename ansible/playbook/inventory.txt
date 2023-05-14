@@ -1,0 +1,20 @@
+192.168.1.44
+
+[Myhosts]
+192.168.1.44
+192.168.1.45
+
+[web]
+192.168.1.44 servername=servera-oracle
+
+[db]
+192.168.1.44
+192.168.1.45
+
+
+[db:vars]
+servervar=dbservers
+
+[prod:children]
+db
+web
